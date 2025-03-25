@@ -11,9 +11,9 @@ package com.cledess.thats_my_jam.authentication.models;
  */
 public class AccessTokenResponse {
 
-    private String accessToken;
+    private final String accessToken;
 
-    private String refreshToken;
+    private final String refreshToken;
 
     public AccessTokenResponse(String accessToken, String refreshToken) {
         this.accessToken = accessToken;
