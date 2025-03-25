@@ -1,0 +1,24 @@
+{
+  "properties": [
+    {
+      "name": "spotify.api.base-url",
+      "type": "java.lang.String",
+      "description": "Base URL of Spotify API"
+    },
+    {
+      "name": "spotify.api.recently-played-path",
+      "type": "java.lang.String",
+      "description": "The path to the recently played endpoint from the Spotify API base URL"
+    },
+    {
+      "name": "spotify.oauth2.access_token",
+      "type": "java.lang.String",
+      "description": "Access Token generated from Spotify OAuth2 flow"
+    },
+    {
+      "name": "spotify.oauth2.refresh_token",
+      "type": "java.lang.String",
+      "description": "Refresh Token generated from Spotify OAuth2 flow"
+    }
+  ]
+}
