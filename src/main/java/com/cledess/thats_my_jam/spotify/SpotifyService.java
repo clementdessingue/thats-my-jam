@@ -28,6 +28,10 @@ public class SpotifyService {
 
     public void retrieveRecentlyPlayedTracksAndInsertIntoDB() {
         SpotifyRecentlyPlayedTracksResponse recentlyPlayedTracks = this.spotifyClient.getRecentlyPlayedTracks();
+        if (recentlyPlayedTracks == null) {
+            log.error("[SpotifyService][retrieveRecentlyPlayedTracksAndInsertIntoDB] No tracks retrieved from Spotify");
+            return;
+        }
 
         int successfullyInsertedTracks = 0;
         List<String> unsuccessfullyInsertedTracksIds = new ArrayList<>();
